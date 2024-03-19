@@ -7,6 +7,8 @@ Feature:  Login Functionality
         # And user types the password
         # Then user clicks the login button 
         # And Log out button is visible on the screen
+        # And Log out button is visible on the screen
+        # And Log out button is visible on the screen
      Examples:
             | Source City     | Destination City | Direction  |
             | Fort Lauderdale | Miami            | One Way    |

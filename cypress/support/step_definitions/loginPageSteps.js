@@ -50,4 +50,5 @@ Then("user clicks the login button", () => {
 Then("Log out button is visible on the screen", () => {
   cy.wait(5000)
   cy.contains('Log Out').should('be.visible')
+  cy.wait(5000)
 });  
