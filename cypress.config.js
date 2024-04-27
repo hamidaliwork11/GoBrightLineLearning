@@ -1,18 +1,13 @@
-const { defineConfig } = require("cypress");
-const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
-const preprocessor = require("@badeball/cypress-cucumber-preprocessor");
-const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild");
+const { defineConfig } = require("cypress")
+const cucumber = require('cypress-cucumber-preprocessor').default
 
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
-      on("file:preprocessor",
-      createBundler({
-        plugins: [createEsbuildPlugin.default(config)],
-      }));
-      preprocessor.addCucumberPreprocessorPlugin(on, config);
-      return config;
+      // implement node event listeners here
+      on('file:preprocessor', cucumber())
     },
-	specPattern: "**/*.feature",
+    specPattern: "cypress/e2e/tests/*.feature",
+    viewportWidth: 1246
   },
 })

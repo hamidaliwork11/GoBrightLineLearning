@@ -1,21 +1,18 @@
 {
-  "name": "cybdd",
+  "name": "cy-cucumber-po",
   "version": "1.0.0",
-  "description": "Boilerplate for implementing BDD (cucumber) in cypress",
-  "main": "cypress.config.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "cypress run"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
-    "cypress": "^12.10.0"
+    "cypress": "^13.6.6",
+    "cypress-cucumber-preprocessor": "^4.3.1"
   },
   "cypress-cucumber-preprocessor": {
-    "step_definitions": "cypress/support/step_definitions/",
-    "nonGlobalStepDefinitions": false
+    "stepDefinitions": "cypress/support/step_definitions/"
   }
 }
