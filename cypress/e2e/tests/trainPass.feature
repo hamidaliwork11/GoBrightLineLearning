@@ -14,4 +14,13 @@ Feature:  Login Functionality
         And the total cost should be $629.00
 
 
-      
+#       and user "checks" the discount checkbox
+
+#       and user unchecks the 
+
+#       When("user {string} the discount checkbox", (discountCheck) => {
+#     {if (discountCheck.includes("checks")) {
+#     console.log("The string contains 'checks'.");
+#     }
+    
+# });
