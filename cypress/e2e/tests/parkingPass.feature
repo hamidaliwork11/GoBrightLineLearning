@@ -15,12 +15,7 @@ Feature: Parking Pass
     And User clicking on Add to Cart button
     And Total cost should be "$91.00"
     And User clicks on Edit button
-    
-
-
 Examples:
-
-
 |garage | state |
 |Aventura | Arizona |
 

@@ -1,4 +1,5 @@
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps'
+import { trainPassLocators } from "../../PageLocators/trainPassLocators";
 
 
 Given("User visits the site", () => {
@@ -7,7 +8,7 @@ Given("User visits the site", () => {
 
 When("User hovers on TICKETS & TRAVEL" , () => {
 
-  cy.get(".blte-nav-item-header__label").contains("TICKETS & TRAVEL").trigger('mouseover');
+  cy.get(trainPassLocators.getMenuOption).contains("TICKETS & TRAVEL").trigger('mouseover');
 
 })
 
