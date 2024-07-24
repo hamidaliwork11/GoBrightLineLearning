@@ -14,9 +14,4 @@ Feature:  Login Functionality
       
 
 
-    #   my name is "John" and "Pakistan" is my country
-      
-    #   Then("my name is {string} and {string} is my country",  (name,country) => {
-    #         cy.contains('Continue').click();
-    #     });
-        
+   

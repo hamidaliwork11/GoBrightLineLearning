@@ -39,14 +39,6 @@ When("User clicks on state from dropdown" , () => {
 
 })
 
-// When("User chooses from dropdown {string}" , (state) => {
-//   // cy.log();
-//   console.log(state);
-
-//   cy.get('#\:r5\:-list').contains(state).click
-
-// })
-
 When("User chooses state from dropdown {string}" , (state) => {
 
   cy.get(parkingPass.getStatefromDropdown).contains(state).click();
