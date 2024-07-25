@@ -22,13 +22,19 @@ When("user clicks to type the full name" , ()=>{
 
 When ("user clicks to type the email" , () => {
 
-    cy.fixture("OHRMLogin").then((email)  => {
+    // cy.fixture("OHRMLogin").then((email)  => {
 
-        let emailOne = getRandomEmail();
+    //     let emailOne = getRandomEmail();
 
-        cy.get(SignUp.getEmail).type(emailOne);
+    //     cy.get(SignUp.getEmail).type(emailOne);
 
-    })
+    // })
+
+    cy.randomEmail().then((email) => {
+        cy.log('Generated email: ' + email);
+        // You can use the generated email for further actions, e.g., filling a form
+        cy.get(SignUp.getEmail).type(email);
+    });
 })
 
 When("user clicks to give compaany name" , () => {
@@ -56,15 +62,12 @@ Then("user provides the phoneNumber" , () => {
 
 
     cy.fixture("OHRMLogin").then((phone) => {
-
-
         cy.get(SignUp.getPhoneNumber).type(phone.Phone_num);
     })
 
 })
 
 When("user clicks on capta" , () => {
-
 
         cy.get(SignUp.clickCapta).click();
 

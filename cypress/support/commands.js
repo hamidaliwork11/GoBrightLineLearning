@@ -27,3 +27,27 @@
 
 
 // cy.get('locator'),scrollintoVIew().type('dsfdsf')
+
+Cypress.Commands.add('randomEmail', () => { 
+    function getRandomEmail() {
+        const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+        const domains = ['example.com', 'test.com', 'mail.com', 'domain.com'];
+        
+        function getRandomString(length) {
+            let result = '';
+            for (let i = 0; i < length; i++) {
+                result += characters.charAt(Math.floor(Math.random() * characters.length));
+            }
+            return result;
+        }
+        
+        const usernameLength = Math.floor(Math.random() * 10) + 5; // random length between 5 and 15
+        const username = getRandomString(usernameLength);
+        const domain = domains[Math.floor(Math.random() * domains.length)];
+        
+        return `${username}@${domain}`;
+    }
+
+    return getRandomEmail();
+});
+ 

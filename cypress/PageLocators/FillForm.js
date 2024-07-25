@@ -5,7 +5,8 @@ const fillForm = {
     // getMainDropdown : '[class="blte-nav-item-header__label"]',
     getEmail : '[id="input-:r8:"]',
     getzipCode : '[id="input-:r9:"]',
-    getButton : "button"
+    getButton : "button",
+    getText : '[class="blte-input__helper-text"]'
 
 
 }
