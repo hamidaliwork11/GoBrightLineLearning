@@ -1,7 +1,5 @@
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps'
 
-
-
 Given("user visits the pass screen", () => {
   cy.visit("https://www.gobrightline.com/train-tickets/passes");
 });

@@ -9,9 +9,3 @@ Feature:  Login Functionality
         Then user clicks on Continue button
         And user clicks on Check-out button
         And the total cost should be "$550.00"
-
-
-      
-
-
-   

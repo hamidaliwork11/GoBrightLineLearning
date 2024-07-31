@@ -3,13 +3,14 @@ import { SignUp } from "../../PageLocators/OHRMlogin";
 import{ generateRandomUsername } from '../utli'
 import{ getRandomEmail } from '../utli'
 import { generateRandomCompanyName} from '../utli'
+import '../Hooks/hooks'
 
-Given("user visits the site of orange HRM" , () => {
+// Given("user visits the site of orange HRM" , () => {
 
-    cy.visit("https://www.orangehrm.com/en/book-a-free-demo/");
-})
+//     cy.visit("https://www.orangehrm.com/en/book-a-free-demo/");
+// })
 
-When("user clicks to type the full name" , ()=>{
+Given("user clicks to type the full name" , ()=>{
 
     cy.fixture("OHRMLogin").then((login) => {
 

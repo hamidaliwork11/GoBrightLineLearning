@@ -15,6 +15,3 @@ Feature:  Login Functionality
         Examples:
         | src_city | dest_city |
         | Miami | West Palm Beach |
-
-
-      
